@@ -24,6 +24,18 @@
     .remark-inline-code {
       font-family: 'Ubuntu Mono';
     }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .grid-item {
+        width: 300px;
+        height: 300px;
+    }
   </style>
 </head>
 
@@ -44,7 +56,9 @@ Notes for the _first_ slide!
 
 class: center, middle
 
-<table style="justify-self: center;">
+# Quem somos?
+
+<table style="margin-left: auto; margin-right: auto;">
 	<thead>
 		<tr>
 			<th style="text-align: center;">Henrique Silva</th>
@@ -57,27 +71,30 @@ class: center, middle
 			<td style="text-align: center;"><img src="media/tiago.jpg" alt="Tiago Branquinho" style="width: 200px; height: 200px;"></td>
 		</tr>
 		<tr>
-			<td style="text-align: center;">Data Science, Machine Learning</td>
-			<td style="text-align: center;">Mobile and Web Development, AI</td>
-		</tr>
+			<td style="text-align: start;">|Data Science, Machine Learning|</td>
+			<td style="text-align: end;">|Mobile and Web Development, AI|</td>
 	</tbody>
 </table>
 <br>
 
-<div style="font-size: 0.7em;">
-	MSc in Informatics and Computing Engineering Students @ FEUP<br>
+<div style="font-size: 0.8em;">
+	Estudantes de Mestrado em Engenharia Informática e Computação @ FEUP<br>
 </div>
 ---
 
 # Agenda
 
 1. Intrudução à Computação Gráfica
+
 2. WebGL
+
 3. Jogo do Pássaro
+
 4. Demo
-5. Detalhes
-6. Jogatana
-7. Questões
+
+5. Jogatana
+
+6. Questões
 
 ---
 
@@ -89,8 +106,7 @@ class: center, middle
 
 - A computação gráfica permite-nos transformar ideias em realidade digital, abrindo portas à imaginação.
 
-      Jogos como GTA VI são o melhor exemplo.
-      <img src="media/gta6.jpg" alt="GTA VI" style="width: 700px; height: 250px;">
+      <img src="media/gta6.jpg" alt="GTA VI" style="width: 650px; height: 300px;">
 
 ---
 
@@ -101,6 +117,11 @@ class: center, middle
 - O que distingue esta tecnologia é que funciona diretamente no vosso browser.
 
 - Em WebGL tudo é feito com triângulos.
+
+      <div style="text-align: center;">      
+        <img src="media/triangle.png" alt="Triângulo Illuminati" style="width: 300px; height: 300px;">
+      </div>
+
 
 ---
 
@@ -120,29 +141,47 @@ class: center, middle
 
 - Detalhes adicionais
 
+<img src="media/terrain.png" alt="Paisagem" style="max-width: 60%; height: auto; position: absolute; top: 340px; right: 10px;">
+
+---
+
+# Detalhes
+
+<div class="grid-container">
+  <div class="grid-item">
+      <img src="media/egg.png" alt="Ovo" style="width: 100%; height: 100%;">
+  </div>
+  <div class="grid-item">
+      <img src="media/bird.png" alt="Rogério" style="width: 100%; height: 100%;">
+  </div>
+</div>
+
+
 ---
 
 class: center
 
 # Demo
 
-<video src="media/demo.mov" alt="bird game" style="width: 90%; height: 75%;" autoplay="true">
-
----
-
-# Detalhes
+<video src="media/demo.mov" alt="bird game" style="width: 100%; height: 100%; margin-bottom: 8em;" autoplay="true">
 
 ---
 
 class: center, middle
 
-# QA
+# Vamos Jogar
 
-## [Jogar!](../project/)
+**WASD** para mover
 
----
+**P** para apanhar o ovo
 
-# Creating an accessible and secure workflow
+**O** para largar o ovo
+
+**R** para repor a posição do pássaro
+
+**Alt+F4** para começar a voar
+
+## [Carrega Aqui!](../project/)
 
     </textarea>
   <script src="https://remarkjs.com/downloads/remark-latest.min.js" type="text/javascript">
